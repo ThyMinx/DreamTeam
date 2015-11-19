@@ -4,6 +4,9 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
+    //public GameObject[] enemies;
+    //public Vector3 spawnValues;
+
     public int score = 0;
     public int highScore = 0;
     public bool newHighScore = false;

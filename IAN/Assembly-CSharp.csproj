@@ -45,16 +45,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Game\DisplayScore.cs" />
-     <Compile Include="Assets\Game\GameManager.cs" />
-     <Compile Include="Assets\Game\Menu.cs" />
-     <Compile Include="Assets\Game\MoveLeft.cs" />
-     <Compile Include="Assets\Game\MoveRight.cs" />
-     <Compile Include="Assets\Game\PauseButton.cs" />
-     <Compile Include="Assets\Game\Retry.cs" />
-     <Compile Include="Assets\Game\Shooting.cs" />
-     <Compile Include="Assets\Game\moving.cs" />
-     <Compile Include="Assets\Game\shotMovement.cs" />
+     <Compile Include="Assets\Game\Scripts\DisplayScore.cs" />
+     <Compile Include="Assets\Game\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Game\Scripts\Menu.cs" />
+     <Compile Include="Assets\Game\Scripts\MoveLeft.cs" />
+     <Compile Include="Assets\Game\Scripts\MoveRight.cs" />
+     <Compile Include="Assets\Game\Scripts\PauseButton.cs" />
+     <Compile Include="Assets\Game\Scripts\Retry.cs" />
+     <Compile Include="Assets\Game\Scripts\Shooting.cs" />
+     <Compile Include="Assets\Game\Scripts\bulletProperties.cs" />
+     <Compile Include="Assets\Game\Scripts\moving.cs" />
+     <Compile Include="Assets\Game\Scripts\shotMovement.cs" />
      <Compile Include="Assets\Main Menu\ExitGame.cs" />
      <Compile Include="Assets\Main Menu\OpenGame.cs" />
      <Compile Include="Assets\Test for night run\Scripts\SideScroller.cs" />
@@ -86,17 +87,11 @@
      <Compile Include="Assets\_Scripts\shoot.cs" />
      <None Include="Assets\_Imported\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Test for night run\Fantasy Skybox FREE\Readme\Readme.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
