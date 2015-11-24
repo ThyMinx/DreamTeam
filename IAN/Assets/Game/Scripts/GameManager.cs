@@ -4,20 +4,19 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-    //public GameObject[] enemies;
-    //public Vector3 spawnValues;
-
     public int score = 0;
     public int highScore = 0;
     public bool newHighScore = false;
     public bool endGame = false;
     public GameObject gameOver;
     public GameObject gameStart;
+    public bool paused = false;
 
     public Text scoreDisplay;
 
     void Start()
     {
+        Time.timeScale = 1;
         gameStart.SetActive(true);
         gameOver.SetActive(false);
     }
@@ -46,6 +45,21 @@ public class GameManager : MonoBehaviour {
             newHighScore = true;
             PlayerPrefs.SetInt("highscore", newHighscore);
         }
+    }
+
+    public void Pause()
+    {
+        if (paused)
+        {
+            paused = false;
+            Time.timeScale = 1;
+        }
+        else
+        {
+            paused = true;
+            Time.timeScale = 0;
+        }
+
     }
 
 }

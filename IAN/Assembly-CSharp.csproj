@@ -48,6 +48,7 @@
      <Compile Include="Assets\Game\Scripts\DestroyByContact.cs" />
      <Compile Include="Assets\Game\Scripts\DestroyByTime.cs" />
      <Compile Include="Assets\Game\Scripts\DisplayScore.cs" />
+     <Compile Include="Assets\Game\Scripts\EnemyProperties.cs" />
      <Compile Include="Assets\Game\Scripts\GameManager.cs" />
      <Compile Include="Assets\Game\Scripts\Menu.cs" />
      <Compile Include="Assets\Game\Scripts\MoveLeft.cs" />

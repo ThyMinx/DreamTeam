@@ -3,8 +3,9 @@ using System.Collections;
 
 public class PauseButton : MonoBehaviour {
 
-    private bool paused = false;
+    public bool paused = false;
     public GameObject pauseMenu;
+    public GameManager gM;
 
     void Start()
     {
@@ -26,14 +27,17 @@ public class PauseButton : MonoBehaviour {
         //Toggle Time
         if (paused)
         {
+            gM.Pause();
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
         }
         else
         {
+            gM.Pause();
             pauseMenu.SetActive(false);
             Time.timeScale = 1;
         }
+        GetComponent<AudioSource>().Play();
     }
 
 }

@@ -29,8 +29,10 @@ public class DestroyByContact : MonoBehaviour {
             Debug.Log("Hit Player");
             Debug.Log("KABOOM!");
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
+            gM.endGame = true;
         }
 
+        GetComponent<AudioSource>().Play();
         Destroy(other.gameObject);
         Destroy(gameObject);
     }

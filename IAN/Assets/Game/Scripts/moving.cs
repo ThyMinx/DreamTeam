@@ -7,15 +7,17 @@ public class moving : MonoBehaviour {
     private bool moveLeft;
     private bool moveRight;
 
+    public GameManager gM;
+
     public GameObject player;
     public float speed = 1f;
  
     void Update()
     {
-        if(moveLeft && !moveRight)
+        if(moveLeft && !moveRight && !gM.paused)
             player.transform.position += Vector3.left * speed;
  
-        if(moveRight && !moveLeft)
+        if(moveRight && !moveLeft && !gM.paused)
             player.transform.position += Vector3.right * speed;
     }
  
