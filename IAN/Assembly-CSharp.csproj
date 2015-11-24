@@ -45,8 +45,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DestroyByTime.cs" />
      <Compile Include="Assets\Game\Scripts\DestroyByContact.cs" />
+     <Compile Include="Assets\Game\Scripts\DestroyByTime.cs" />
      <Compile Include="Assets\Game\Scripts\DisplayScore.cs" />
      <Compile Include="Assets\Game\Scripts\GameManager.cs" />
      <Compile Include="Assets\Game\Scripts\Menu.cs" />
@@ -55,6 +55,7 @@
      <Compile Include="Assets\Game\Scripts\PauseButton.cs" />
      <Compile Include="Assets\Game\Scripts\Retry.cs" />
      <Compile Include="Assets\Game\Scripts\Shooting.cs" />
+     <Compile Include="Assets\Game\Scripts\Spawning.cs" />
      <Compile Include="Assets\Game\Scripts\bulletProperties.cs" />
      <Compile Include="Assets\Game\Scripts\moving.cs" />
      <Compile Include="Assets\Game\Scripts\shotMovement.cs" />
