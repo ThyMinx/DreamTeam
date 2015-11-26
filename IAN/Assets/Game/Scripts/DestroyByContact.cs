@@ -18,16 +18,12 @@ public class DestroyByContact : MonoBehaviour {
     {
         if (enemyExplosion != null && other.tag == "Enemy")
         {
-            Debug.Log("Hit Enemy");
-            Debug.Log("BOOM!");
             Instantiate(enemyExplosion, transform.position, transform.rotation);
             gM.score += scoreValue;
         }
 
         if (playerExplosion != null && other.tag == "Player")
         {
-            Debug.Log("Hit Player");
-            Debug.Log("KABOOM!");
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
             gM.endGame = true;
         }

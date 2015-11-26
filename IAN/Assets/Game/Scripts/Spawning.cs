@@ -10,7 +10,9 @@ public class Spawning : MonoBehaviour {
     public float spawnTime = 3f;
 
     //Position of spawning defined by an object with a transform
-    public Transform spawnPoint;
+    public Transform[] spawnPoint;
+
+    public GameManager gM;
 
     void Start()
     {
@@ -23,8 +25,18 @@ public class Spawning : MonoBehaviour {
         //Creates a random variable which is a random game object in the array enemy
         int enemyIndex = Random.Range(0, enemy.Length);
 
+        int spawnIndex = Random.Range(0, spawnPoint.Length);
+
         //Creates an enemy based on which ever random one was chosen. It's created at the transform spawnPoint's position and rotation
-        Instantiate(enemy[enemyIndex], spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemy[enemyIndex], spawnPoint[spawnIndex].position, spawnPoint[spawnIndex].rotation);
+    }
+
+    void Update()
+    {
+        if (gM.endGame)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

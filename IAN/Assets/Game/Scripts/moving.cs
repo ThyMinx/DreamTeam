@@ -14,10 +14,10 @@ public class moving : MonoBehaviour {
  
     void Update()
     {
-        if(moveLeft && !moveRight && !gM.paused)
+        if(moveLeft && !moveRight && !gM.paused && !gM.endGame)
             player.transform.position += Vector3.left * speed;
  
-        if(moveRight && !moveLeft && !gM.paused)
+        if(moveRight && !moveLeft && !gM.paused && !gM.endGame)
             player.transform.position += Vector3.right * speed;
     }
  
