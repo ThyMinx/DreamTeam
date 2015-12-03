@@ -7,7 +7,8 @@ public class Spawning : MonoBehaviour {
     public GameObject[] enemy;
 
     //Time between each spawn
-    public float spawnTime = 3f;
+    [SerializeField]
+    private float spawnTime = 3f;
 
     //Position of spawning defined by an object with a transform
     public Transform[] spawnPoint;
@@ -36,6 +37,14 @@ public class Spawning : MonoBehaviour {
         if (gM.endGame)
         {
             Destroy(gameObject);
+        }
+        if (gM.score >= 150 && gM.score < 250)
+        {
+            spawnTime = 2f;
+        }
+        if (gM.score >= 250)
+        {
+            spawnTime = 1f;
         }
     }
 
